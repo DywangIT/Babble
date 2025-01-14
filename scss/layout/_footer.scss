@@ -1,0 +1,51 @@
+@use "../abstracts/variables";
+
+.footer {
+    background: variables.$primary-color;
+    padding: 100px 0 40px;
+}
+
+.footer-main__copyright {
+    margin-top: 14px;
+    color: #665f73;
+    line-height: 1.75; /* 175% */
+}
+
+.footer-main .social-media {
+    margin-top: 18px;
+    display: flex;
+    gap: 14px;
+}
+
+.footer-main .social-media svg {
+    color: #201830;
+}
+
+.footer-main .social-media svg:hover {
+    color: #936CDD;
+}
+
+.footer h3 {
+    margin-bottom: 24px;
+    color: #201830;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5; /* 150% */
+}
+
+.footer-col a {
+    margin-top: 16px;
+    display: block;
+    color: #665f73;
+    line-height: 1.75; /* 175% */
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.footer-directories .list {
+    display: flex;
+    gap: 16px;
+}

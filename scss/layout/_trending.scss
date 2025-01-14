@@ -1,0 +1,90 @@
+@use "../abstracts/variables";
+
+.trending {
+    margin-top: 160px;
+}
+
+.trending .container {
+    align-items: center;
+}
+
+.trending-contents {
+    position: relative;
+}
+
+.trending__cta {
+    margin-top: 38px;
+    height: 64px;
+    border-radius: 8px;
+    background: #936cdd;
+    font-size: 1.8rem;
+    line-height: calc(6.4 / 1.8); /* 166.667% */
+}
+
+.trending__cta svg {
+    margin-bottom: -4px;
+    margin-left: 8px;
+}
+
+.trending__heading img {
+    position: absolute;
+    width: 50.21%;
+    top: 28.97%;
+    left: 36.81%;
+}
+
+.trending-directories {
+    width: 100%;
+    aspect-ratio: 570 / 399;
+    position: relative;
+}
+
+.trending-directories img {
+    position: absolute;
+}
+
+.trending-directories img:nth-child(1) {
+    width: 25.96%;
+    top: 0;
+    left: 32.45%;
+}
+
+.trending-directories img:nth-child(2) {
+    width: 17.54%;
+    right: 0;
+    top: 14.78%
+}
+
+.trending-directories img:nth-child(3) {
+    width: 24.21%;
+    right: 8.42%;
+    bottom: 10%;
+}
+
+.trending-directories img:nth-child(4) {
+    width: 22.1%;
+    bottom: 0;
+    left: 29.65%;
+}
+
+.trending-directories img:nth-child(5) {
+    width: 14%;
+    left: 0;
+    top: 41.1%;
+}
+
+.trending-directories__bg {
+    height: 71.93%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: variables.$secondary-color;
+    filter: blur(129px);
+    opacity: 0.4;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
