@@ -5,15 +5,12 @@
     margin-top: 160px;
     background-color: variables.$primary-color;
     scroll-margin-top: 70px;
+    .container .row:nth-child(1) {
+        position: relative;
+        z-index: 0;
+    }
     &__heading {
         max-width: 400px;
-        position: relative;
-        img {
-            position: absolute;
-            width: 35.64%;
-            left: 52.82%;
-            top: 40.38%;
-        }
     }
     &-btn {
         margin-left: auto;

@@ -34,16 +34,12 @@
     }
     &-contents {
         position: relative;
+        .line-decoration {
+            top: 70px;
+        }
     }
     &__heading {
         margin-top: 18px;
-        position: relative;
-        img {
-            position: absolute;
-            width: 38.72%;
-            left: 40%;
-            top: 33.65%;
-        }
     }
     &__desc {
         margin-top: 38px;

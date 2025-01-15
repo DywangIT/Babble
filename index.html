@@ -297,11 +297,12 @@
                             <div class="trending-contents">
                                 <h2 class="trending__heading section__heading">
                                     We are in the top padcast directories
-                                    <img
-                                        src="./assets/imgs/line-decoration.svg"
-                                        alt=""
-                                    />
                                 </h2>
+                                <img
+                                    class="line-decoration"
+                                    src="./assets/imgs/line-decoration.svg"
+                                    alt=""
+                                />
                                 <p class="trending__desc section__desc">
                                     Rebuilt for simplicity and speed, so you can
                                     spend more time discovering and listening to
@@ -361,14 +362,20 @@
             </section>
             <section class="category" id="category">
                 <div class="container">
-                    <h2 class="category__heading section__heading">
-                        Listen by category
-                        <img src="./assets/imgs/line-decoration.svg" alt="" />
-                    </h2>
-                    <p class="category__desc section__desc">
-                        Listen all kind of podcasts you like by exploring
-                        categories. Make your day even better
-                    </p>
+                    <div class="category-contents">
+                        <h2 class="category__heading section__heading">
+                            Listen by category
+                        </h2>
+                        <img
+                            src="./assets/imgs/line-decoration.svg"
+                            class="line-decoration"
+                            alt=""
+                        />
+                        <p class="category__desc section__desc">
+                            Listen all kind of podcasts you like by exploring
+                            categories. Make your day even better
+                        </p>
+                    </div>
 
                     <div class="category-items">
                         <div class="row">
@@ -583,11 +590,12 @@
                     <div class="row">
                         <h2 class="episodes__heading section__heading">
                             Our most popular episodes
-                            <img
-                                src="./assets/imgs/line-decoration.svg"
-                                alt=""
-                            />
                         </h2>
+                        <img
+                            class="line-decoration"
+                            src="./assets/imgs/line-decoration.svg"
+                            alt=""
+                        />
                         <a href="" class="episodes-btn btn hide-on-tabmo"
                             >All episodes</a
                         >
@@ -866,11 +874,12 @@
                                 </svg>
                                 <h2 class="feedback__heading section__heading">
                                     What our listeners saying about us
-                                    <img
-                                        src="./assets/imgs/line-decoration.svg"
-                                        alt=""
-                                    />
                                 </h2>
+                                <img
+                                    class="line-decoration"
+                                    src="./assets/imgs/line-decoration.svg"
+                                    alt=""
+                                />
                                 <p class="feedback__desc section__desc">
                                     Whoa whoa, let me take some notes! A wealth
                                     of audio knowledge. Every episode is a gem!
@@ -892,23 +901,26 @@
             <section class="cta">
                 <div class="container">
                     <div>
-                        <div class="row">
-                            <div class="col col-lg-5 col-12 offset-lg-1">
-                                <h2 class="cta__heading section__heading">
-                                    Subscribe and get update regularly
+                        <div class="cta-contents">
+                            <div class="row">
+                                <div class="col col-lg-5 col-12 offset-lg-1">
+                                    <h2 class="cta__heading section__heading">
+                                        Subscribe and get update regularly
+                                    </h2>
                                     <img
+                                        class="line-decoration"
                                         src="./assets/imgs/line-decoration.svg"
                                         alt=""
                                     />
-                                </h2>
-                            </div>
-                            <div class="col col-lg-5 col-12">
-                                <p class="cta__desc section__desc">
-                                    Rebuilt for simplicity and speed, so you can
-                                    spend more time discovering and listening to
-                                    great podcasts. Get all the updates of
-                                    latest podcasts.
-                                </p>
+                                </div>
+                                <div class="col col-lg-5 col-12">
+                                    <p class="cta__desc section__desc">
+                                        Rebuilt for simplicity and speed, so you can
+                                        spend more time discovering and listening to
+                                        great podcasts. Get all the updates of
+                                        latest podcasts.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <form action="">
@@ -918,6 +930,7 @@
                                         type="text"
                                         placeholder="Your name"
                                         class="cta-input"
+                                        required
                                     />
                                 </div>
                                 <div class="col col-lg-4 col-12">
@@ -925,10 +938,14 @@
                                         type="text"
                                         placeholder="Your email adress"
                                         class="cta-input"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        required
                                     />
                                 </div>
                                 <div>
-                                    <a href="" class="cta-btn btn">Subscribe</a>
+                                    <button type="submit" class="cta-btn btn">
+                                        Subscribe
+                                    </button>
                                 </div>
                             </div>
                         </form>

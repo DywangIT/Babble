@@ -1,14 +1,12 @@
 .category {
     margin-top: 160px;
+    &-contents {
+        position: relative;
+        width: fit-content;
+        margin: 0 auto;
+    }
     &__heading {
         text-align: center;
-        position: relative;
-        img {
-            width: 193px;
-            position: absolute;
-            bottom: -20%;
-            left: 50%;
-        }
     }
     &__desc {
         text-align: center;
