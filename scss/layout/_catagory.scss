@@ -1,97 +1,82 @@
 .category {
     margin-top: 160px;
-}
-
-.category__heading {
-    text-align: center;
-    position: relative;
-}
-
-.category__heading img {
-    width: 193px;
-    position: absolute;
-    bottom: -20%;
-    left: 50%;
-}
-
-.category__desc {
-    text-align: center;
-}
-
-.category-items {
-    margin-top: 70px;
-}
-
-.category-item {
-    display: block;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #ccc;
-    position: relative;
-}
-
-.category-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.category-item .caption {
-    width: 100%;
-    height: 86px;
-    padding: 16px 24px 0;
-    flex-shrink: 0;
-    fill: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    position: absolute;
-    bottom: 0;
-}
-
-.category-item .caption svg {
-    margin-left: 6px;
-    margin-bottom: -3px;
-}
-
-.category-item .caption__heading {
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.67; /* 166.667% */
-}
-
-.category-item .caption__desc {
-    color: #fff;
-    font-size: 1.4rem;
-    line-height: 1.71; /* 171.429% */
-}
-
-.category-item.one {
-    height: 600px;
-    position: relative;
-}
-
-.category-item.two,
-.category-item.four {
-    height: 285px;
-}
-
-.category-item.three,
-.category-item.five {
-    height: 285px;
-}
-
-.category-btn {
-    display: flex;
-    justify-content: center;
-    margin: 55px auto 0;
-}
-
-.category-btn a {
-    height: 64px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    color: #fff;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: calc(6.4 / 1.8); /* 166.667% */
+    &__heading {
+        text-align: center;
+        position: relative;
+        img {
+            width: 193px;
+            position: absolute;
+            bottom: -20%;
+            left: 50%;
+        }
+    }
+    &__desc {
+        text-align: center;
+    }
+    &-items {
+        margin-top: 70px;
+    }
+    &-item {
+        display: block;
+        border-radius: 8px;
+        overflow: hidden;
+        background: #ccc;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .caption {
+            width: 100%;
+            height: 86px;
+            padding: 16px 24px 0;
+            flex-shrink: 0;
+            fill: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            position: absolute;
+            bottom: 0;
+            svg {
+                margin-left: 6px;
+                margin-bottom: -3px;
+            }
+            &__heading {
+                color: #fff;
+                font-size: 1.8rem;
+                font-weight: 600;
+                line-height: 1.67; /* 166.667% */
+            }
+            &__desc {
+                color: #fff;
+                font-size: 1.4rem;
+                line-height: 1.71; /* 171.429% */
+            }
+        }
+        &.one {
+            height: 600px;
+            position: relative;
+        }
+        &.three,
+        &.five {
+            height: 285px;
+        }
+        &.two,
+        &.four {
+            height: 285px;
+        }
+    }
+    &-btn {
+        display: flex;
+        justify-content: center;
+        margin: 55px auto 0;
+        a {
+            height: 64px;
+            flex-shrink: 0;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: calc(6.4 / 1.8); /* 166.667% */
+        }
+    }
 }

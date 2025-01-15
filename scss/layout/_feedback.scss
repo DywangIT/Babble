@@ -1,82 +1,69 @@
 .feedback {
     margin-top: 168px;
-}
-
-.feedback .container > .row {
-    align-items: center;
-}
-
-.feedback-images {
-    position: relative;
-}
-
-.feedback__img {
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.feedback__img.focus {
-    width: 67%;
-    aspect-ratio: 370 / 444;
-    margin-left: auto;
-}
-
-.feedback__img.nofocus {
-    width: 50%;
-    aspect-ratio: 270 / 284;
-    position: absolute;
-    top: 50%;
-    translate: 0 -50%;
-}
-
-.feedback__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.feedback .dots {
-    position: absolute;
-    bottom: 0;
-    left: 16.67%;
-}
-
-.feedback-contents {
-    position: relative;
-}
-
-.feedback__heading {
-    margin-top: 18px;
-    position: relative;
-}
-
-.feedback__heading img {
-    position: absolute;
-    width: 38.72%;
-    left: 40%;
-    top: 33.65%;
-}
-
-.feedback__desc {
-    margin-top: 38px;
-}
-
-.feedback__author {
-    display: inline-block;
-    margin-top: 18px;
-    color: #aba6b5;
-    font-size: 1.4rem;
-    line-height: 1.71; /* 171.429% */
-}
-
-.feedback-contents__decoration {
-    width: 287px;
-    height: 287px;
-    border-radius: 50%;opacity: 0.4;
-    background: #FF9051;
-    filter: blur(129px);
-    z-index: -1;
-    position: absolute;
-    right: -100%;
-    bottom: 30%;
+    .container > .row {
+        align-items: center;
+    }
+    &-images {
+        position: relative;
+    }
+    &__img {
+        border-radius: 8px;
+        overflow: hidden;
+        &.focus {
+            width: 67%;
+            aspect-ratio: 370 / 444;
+            margin-left: auto;
+        }
+        &.nofocus {
+            width: 50%;
+            aspect-ratio: 270 / 284;
+            position: absolute;
+            top: 50%;
+            translate: 0 -50%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .dots {
+        position: absolute;
+        bottom: 0;
+        left: 16.67%;
+    }
+    &-contents {
+        position: relative;
+    }
+    &__heading {
+        margin-top: 18px;
+        position: relative;
+        img {
+            position: absolute;
+            width: 38.72%;
+            left: 40%;
+            top: 33.65%;
+        }
+    }
+    &__desc {
+        margin-top: 38px;
+    }
+    &__author {
+        display: inline-block;
+        margin-top: 18px;
+        color: #aba6b5;
+        font-size: 1.4rem;
+        line-height: 1.71; /* 171.429% */
+    }
+    &-contents__decoration {
+        width: 287px;
+        height: 287px;
+        border-radius: 50%;opacity: 0.4;
+        background: #FF9051;
+        filter: blur(129px);
+        z-index: -1;
+        position: absolute;
+        right: -100%;
+        bottom: 30%;
+    }
 }

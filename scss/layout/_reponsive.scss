@@ -1,0 +1,248 @@
+// PC
+@media screen and (min-width: 992px) {
+  .hide-on-pc {
+      display: none;
+  }
+}
+
+// Tablet + Mobile
+@media screen and (max-width: 991.98px) {
+  .hide-on-tabmo {
+      display: none;
+  }
+
+  // header
+  .header {
+    padding: 20px 0;
+    top: 0;
+    &-menu {
+        width: 25px;
+        margin-left: auto;
+    }
+  }
+
+  .menu-drawer {
+    position: fixed;
+    inset: 0 40% 0 0;
+    background: #fff;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: 0.5s ease;
+    padding: 60px;
+    .header-nav-list {
+      flex-direction: column;
+      font-size: 1.8rem;
+      gap: 12px;
+    }
+    .header-button {
+      margin-top: 12px;
+      flex-direction: column;
+      align-items: start;
+      gap: 12px;
+      font-size: 1.8rem;
+      * {
+          color: #665f73;
+          font-weight: 500;
+          text-decoration: underline;
+      }
+    }
+  }
+
+  .menu-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0 0 0 / 0.3);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s ease;
+  }
+
+  .header-menu__checkbox:checked ~ .menu {
+    &-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+    &-drawer {
+        transform: translateX(0);
+    }
+  }
+  // hero
+  .hero {
+    padding: 22px 0 30px;
+    &__title {
+        font-size: 3.6rem;
+        margin-top: 39px;
+    }
+    &__desc {
+        font-size: 1.4rem;
+    }
+    &-contents__decoration {
+      width: 53.79%;
+      top: 28.55%;
+      left: 1%;
+    }
+  }
+  // trending
+  .trending {
+    margin-top: 100px;
+    .container > .row {
+        flex-wrap: wrap-reverse;
+    }
+    &__heading {
+        margin-top: 38px;
+        font-size: 26px;
+        img {
+          width: 38.21%;
+          top: 21.97%;
+          left: -0.19%;
+        }
+    }
+    &__desc {
+      margin-top: 12px;
+      font-size: 1.4rem;
+    }
+    &__cta {
+      margin-top: 28px;
+    }
+  }
+  // category
+  .category {
+      margin-top: 100px;
+      &__heading {
+          font-size: 2.6rem;
+          img {
+            width: 122px;
+          }
+      }
+      &__desc {
+          font-size: 1.4rem;
+      }
+      &-items {
+          margin-top: 38px;
+      }
+      &-item.three,
+      &-item.four {
+      max-width: 270px;
+      margin: 0 auto;
+      }
+  }
+  // episodes
+  .episodes {
+    padding: 70px 0;
+    margin-top: 100px;
+    &__heading {
+      font-size: 2.6rem;
+      max-width: 340px;
+      img {
+        width: 35.64%;
+        left: 3.82%;
+        top: 83.38%;
+      }
+    }
+    .container > .row:nth-child(2) {
+      margin-top: 38px;
+      flex-wrap: nowrap;
+      overflow: hidden;
+    }
+    &-item {
+      &__duration {
+        font-size: 1rem;
+      }
+      &__heading {
+        margin-top: 7px;
+        font-size: 1.2rem;
+      }
+      &__desc {
+        margin-top: 12px;
+        font-size: 1rem;
+      }
+      &__link {
+        margin-top: 7px;
+        font-size: 1rem;
+        svg {
+          width: 10px;
+          margin-left: 4px;
+          margin-bottom: -6px;
+        }
+      }
+    }
+    .dots {
+      margin-top: 18px;
+    }
+    &-btn {
+      margin-top: 38px;
+    }
+  }
+  // feedback
+  .feedback {
+    margin-top: 100px;
+    .container > .row {
+      flex-wrap: wrap-reverse;
+    }
+    &__heading {
+      font-size: 2.6rem;
+      img {
+        width: 30.72%;
+        left: 30%;
+        top: 33.65%;
+      }
+    }
+    &__desc {
+      margin-top: 12px;
+      font-size: 1.43rem;
+    }
+    &__author {
+      margin-top: 12px;
+    }
+    &-images {
+      margin-top: 28px;
+    }
+  }
+  // cta
+  .cta {
+    margin-top: 100px;
+    .container {
+      padding: 0;
+    }
+    .container > * {
+      padding: 50px 15px;
+    }
+    &__heading {
+      font-size: 2.6rem;
+      img {
+        width: 24.12%;
+        left: 236px;
+        bottom: 27px;
+      }
+    }
+    &__desc {
+      margin-top: 12px;
+      font-size: 1.4rem;
+    }
+    form .row {
+      row-gap: 12px;
+      .cta-btn {
+        margin-top: 6px;
+      }
+    }
+    .star3 {
+      bottom: 18px;
+    }
+  }
+  // footer 
+  .footer {
+    padding: 54px 0 50px;
+    h3 {
+      margin-top: 38px;
+    }
+  }
+}
+
+// Tablet
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+}
+
+// Mobile
+@media screen and (max-width: 767.98px) {
+}

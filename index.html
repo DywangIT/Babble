@@ -22,25 +22,50 @@
                         class="header-logo"
                     />
                 </a>
-                <ul class="header-nav-list">
+                <ul class="header-nav-list hide-on-tabmo">
                     <li><a href="#episodes">Episodes</a></li>
                     <li><a href="#trending">Trending</a></li>
                     <li><a href="#category">Category</a></li>
                     <li><a href="#feedback">Blog</a></li>
                 </ul>
-                <div class="header-button">
+                <div class="header-button hide-on-tabmo">
                     <a href="#!" class="header-button__login">Log in</a>
                     <a href="#!" class="header-button__signup btn">Sign up</a>
                 </div>
+                <input
+                    hidden
+                    type="checkbox"
+                    class="header-menu__checkbox"
+                    id="header-menu__checkbox"
+                />
+                <label
+                    class="header-menu hide-on-pc"
+                    for="header-menu__checkbox"
+                >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                </label>
+
+                <div class="menu-drawer hide-on-pc">
+                    <ul class="header-nav-list">
+                        <li><a href="#episodes">Episodes</a></li>
+                        <li><a href="#trending">Trending</a></li>
+                        <li><a href="#category">Category</a></li>
+                        <li><a href="#feedback">Blog</a></li>
+                    </ul>
+                    <div class="header-button">
+                        <a href="#!" class="header-button__login">Log in</a>
+                        <a href="#!" class="header-button__signup ">Sign up</a>
+                    </div>
+                </div>
+                <label for="header-menu__checkbox" class="menu-overlay"></label>
             </div>
         </header>
-
         <main>
             <section class="hero">
                 <div class="container">
                     <div class="row">
                         <div class="col col-lg-6 col-12">
-                            <div class="row">
+                            <div class="row gx-lg-3 gx-2">
                                 <div class="col">
                                     <div class="hero-item1">
                                         <div class="hero-img">
@@ -172,7 +197,11 @@
                                             alt=""
                                     /></a>
                                 </div>
-                                <img src="./assets/imgs/line-decoration.svg" alt="" class="hero-contents__decoration">
+                                <img
+                                    src="./assets/imgs/line-decoration.svg"
+                                    alt=""
+                                    class="hero-contents__decoration"
+                                />
                             </div>
                         </div>
                     </div>
@@ -185,7 +214,10 @@
                             <div class="trending-contents">
                                 <h2 class="trending__heading section__heading">
                                     We are in the top padcast directories
-                                    <img src="./assets/imgs/line-decoration.svg" alt="">
+                                    <img
+                                        src="./assets/imgs/line-decoration.svg"
+                                        alt=""
+                                    />
                                 </h2>
                                 <p class="trending__desc section__desc">
                                     Rebuilt for simplicity and speed, so you can
@@ -248,7 +280,7 @@
                 <div class="container">
                     <h2 class="category__heading section__heading">
                         Listen by category
-                        <img src="./assets/imgs/line-decoration.svg" alt="">
+                        <img src="./assets/imgs/line-decoration.svg" alt="" />
                     </h2>
                     <p class="category__desc section__desc">
                         Listen all kind of podcasts you like by exploring
@@ -264,75 +296,185 @@
                                         alt=""
                                     />
                                     <div class="caption">
-                                        <h4 class="caption__heading">Education<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                            <path d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5C3.41015 13.5 0.5 10.5899 0.5 7C0.5 3.41015 3.41015 0.5 7 0.5C10.5899 0.5 13.5 3.41015 13.5 7Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.77109 5L9.99966 7L7.77109 9M4 7.00036H10H4Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg></h4>
-                                            <p class="caption__desc">120 Podcasts Channel</p>
+                                        <h4 class="caption__heading">
+                                            Education<svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="14"
+                                                height="14"
+                                                viewBox="0 0 14 14"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5C3.41015 13.5 0.5 10.5899 0.5 7C0.5 3.41015 3.41015 0.5 7 0.5C10.5899 0.5 13.5 3.41015 13.5 7Z"
+                                                    stroke="white"
+                                                    stroke-miterlimit="10"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                                <path
+                                                    d="M7.77109 5L9.99966 7L7.77109 9M4 7.00036H10H4Z"
+                                                    stroke="white"
+                                                    stroke-miterlimit="10"
+                                                    stroke-linecap="round"
+                                                    stroke-linejoin="round"
+                                                />
+                                            </svg>
+                                        </h4>
+                                        <p class="caption__desc">
+                                            120 Podcasts Channel
+                                        </p>
                                     </div>
                                 </a>
                             </div>
                             <div class="col col-lg-8 col-12">
                                 <div class="row">
-                                    <div class="col col-lg-7 col-12">
+                                    <div class="col col-lg-7 col-12 gy-lg-0 gy-2">
                                         <a href="" class="category-item two">
                                             <img
                                                 src="./assets/imgs/category-item.jpg"
                                                 alt=""
                                             />
                                             <div class="caption">
-                                                <h4 class="caption__heading">Healthcare<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                                    <path d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5C3.41015 13.5 0.5 10.5899 0.5 7C0.5 3.41015 3.41015 0.5 7 0.5C10.5899 0.5 13.5 3.41015 13.5 7Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.77109 5L9.99966 7L7.77109 9M4 7.00036H10H4Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg></h4>
-                                                    <p class="caption__desc">120 Podcasts Channel</p>
+                                                <h4 class="caption__heading">
+                                                    Healthcare<svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="14"
+                                                        height="14"
+                                                        viewBox="0 0 14 14"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5C3.41015 13.5 0.5 10.5899 0.5 7C0.5 3.41015 3.41015 0.5 7 0.5C10.5899 0.5 13.5 3.41015 13.5 7Z"
+                                                            stroke="white"
+                                                            stroke-miterlimit="10"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                        <path
+                                                            d="M7.77109 5L9.99966 7L7.77109 9M4 7.00036H10H4Z"
+                                                            stroke="white"
+                                                            stroke-miterlimit="10"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                    </svg>
+                                                </h4>
+                                                <p class="caption__desc">
+                                                    120 Podcasts Channel
+                                                </p>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col col-lg-5 col-12">
+                                    <div class="col col-lg-5 col-12 gy-lg-0 gy-2">
                                         <a href="" class="category-item three">
                                             <img
                                                 src="./assets/imgs/category-item.jpg"
                                                 alt=""
                                             />
                                             <div class="caption">
-                                                <h4 class="caption__heading">Music<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                                    <path d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5C3.41015 13.5 0.5 10.5899 0.5 7C0.5 3.41015 3.41015 0.5 7 0.5C10.5899 0.5 13.5 3.41015 13.5 7Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.77109 5L9.99966 7L7.77109 9M4 7.00036H10H4Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg></h4>
-                                                    <p class="caption__desc">120 Podcasts Channel</p>
+                                                <h4 class="caption__heading">
+                                                    Music<svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="14"
+                                                        height="14"
+                                                        viewBox="0 0 14 14"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5C3.41015 13.5 0.5 10.5899 0.5 7C0.5 3.41015 3.41015 0.5 7 0.5C10.5899 0.5 13.5 3.41015 13.5 7Z"
+                                                            stroke="white"
+                                                            stroke-miterlimit="10"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                        <path
+                                                            d="M7.77109 5L9.99966 7L7.77109 9M4 7.00036H10H4Z"
+                                                            stroke="white"
+                                                            stroke-miterlimit="10"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                    </svg>
+                                                </h4>
+                                                <p class="caption__desc">
+                                                    120 Podcasts Channel
+                                                </p>
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="row focus">
-                                    <div class="col col-lg-5 col-12 gy-lg-3">
+                                    <div class="col col-lg-5 col-12 gy-lg-3 gy-2">
                                         <a href="" class="category-item four">
                                             <img
                                                 src="./assets/imgs/category-item.jpg"
                                                 alt=""
                                             />
                                             <div class="caption">
-                                                <h4 class="caption__heading">Fashion<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                                    <path d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5C3.41015 13.5 0.5 10.5899 0.5 7C0.5 3.41015 3.41015 0.5 7 0.5C10.5899 0.5 13.5 3.41015 13.5 7Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.77109 5L9.99966 7L7.77109 9M4 7.00036H10H4Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg></h4>
-                                                    <p class="caption__desc">120 Podcasts Channel</p>
+                                                <h4 class="caption__heading">
+                                                    Fashion<svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="14"
+                                                        height="14"
+                                                        viewBox="0 0 14 14"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5C3.41015 13.5 0.5 10.5899 0.5 7C0.5 3.41015 3.41015 0.5 7 0.5C10.5899 0.5 13.5 3.41015 13.5 7Z"
+                                                            stroke="white"
+                                                            stroke-miterlimit="10"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                        <path
+                                                            d="M7.77109 5L9.99966 7L7.77109 9M4 7.00036H10H4Z"
+                                                            stroke="white"
+                                                            stroke-miterlimit="10"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                    </svg>
+                                                </h4>
+                                                <p class="caption__desc">
+                                                    120 Podcasts Channel
+                                                </p>
                                             </div>
                                         </a>
                                     </div>
-                                    <div class="col col-lg-7 col-12 gy-lg-3">
+                                    <div class="col col-lg-7 col-12 gy-lg-3 gy-2">
                                         <a href="" class="category-item five">
                                             <img
                                                 src="./assets/imgs/category-item.jpg"
                                                 alt=""
                                             />
                                             <div class="caption">
-                                                <h4 class="caption__heading">Comedy<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                                    <path d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5C3.41015 13.5 0.5 10.5899 0.5 7C0.5 3.41015 3.41015 0.5 7 0.5C10.5899 0.5 13.5 3.41015 13.5 7Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.77109 5L9.99966 7L7.77109 9M4 7.00036H10H4Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg></h4>
-                                                    <p class="caption__desc">120 Podcasts Channel</p>
+                                                <h4 class="caption__heading">
+                                                    Comedy<svg
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        width="14"
+                                                        height="14"
+                                                        viewBox="0 0 14 14"
+                                                        fill="none"
+                                                    >
+                                                        <path
+                                                            d="M13.5 7C13.5 10.5899 10.5899 13.5 7 13.5C3.41015 13.5 0.5 10.5899 0.5 7C0.5 3.41015 3.41015 0.5 7 0.5C10.5899 0.5 13.5 3.41015 13.5 7Z"
+                                                            stroke="white"
+                                                            stroke-miterlimit="10"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                        <path
+                                                            d="M7.77109 5L9.99966 7L7.77109 9M4 7.00036H10H4Z"
+                                                            stroke="white"
+                                                            stroke-miterlimit="10"
+                                                            stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                        />
+                                                    </svg>
+                                                </h4>
+                                                <p class="caption__desc">
+                                                    120 Podcasts Channel
+                                                </p>
                                             </div>
                                         </a>
                                     </div>
@@ -350,9 +492,12 @@
                     <div class="row">
                         <h2 class="episodes__heading section__heading">
                             Our most popular episodes
-                            <img src="./assets/imgs/line-decoration.svg" alt="">
+                            <img
+                                src="./assets/imgs/line-decoration.svg"
+                                alt=""
+                            />
                         </h2>
-                        <a href="" class="episodes-btn btn">All episodes</a>
+                        <a href="" class="episodes-btn btn hide-on-tabmo">All episodes</a>
                     </div>
                     <div class="row">
                         <div class="col col-lg-6 col-12">
@@ -577,6 +722,7 @@
                         <a href="#!"><div class="dot"></div></a>
                         <a href="#!"><div class="dot"></div></a>
                     </div>
+                    <a href="" class="episodes-btn btn hide-on-pc">All episodes</a>
                 </div>
             </section>
             <section class="feedback" id="feedback">
@@ -625,7 +771,10 @@
                                 </svg>
                                 <h2 class="feedback__heading section__heading">
                                     What our listeners saying about us
-                                    <img src="./assets/imgs/line-decoration.svg" alt="">
+                                    <img
+                                        src="./assets/imgs/line-decoration.svg"
+                                        alt=""
+                                    />
                                 </h2>
                                 <p class="feedback__desc section__desc">
                                     Whoa whoa, let me take some notes! A wealth
@@ -638,7 +787,7 @@
                                     >Scott Adams</span
                                 >
                                 <div
-                                    class="feedback-contents__decoration"
+                                    class="feedback-contents__decoration hide-on-tabmo"
                                 ></div>
                             </div>
                         </div>
@@ -652,7 +801,10 @@
                             <div class="col col-lg-5 col-12 offset-lg-1">
                                 <h2 class="cta__heading section__heading">
                                     Subscribe and get update regularly
-                                    <img src="./assets/imgs/line-decoration.svg" alt="">
+                                    <img
+                                        src="./assets/imgs/line-decoration.svg"
+                                        alt=""
+                                    />
                                 </h2>
                             </div>
                             <div class="col col-lg-5 col-12">
@@ -685,9 +837,21 @@
                                 </div>
                             </div>
                         </form>
-                        <img src="./assets/imgs/Star 1.svg" alt="" class="star1">
-                        <img src="./assets/imgs/Star 2.svg" alt="" class="star2">
-                        <img src="./assets/imgs/Star 3.svg" alt="" class="star3">
+                        <img
+                            src="./assets/imgs/Star 1.svg"
+                            alt=""
+                            class="star1"
+                        />
+                        <img
+                            src="./assets/imgs/Star 2.svg"
+                            alt=""
+                            class="star2"
+                        />
+                        <img
+                            src="./assets/imgs/Star 3.svg"
+                            alt=""
+                            class="star3"
+                        />
                     </div>
                 </div>
             </section>
@@ -702,7 +866,7 @@
                                 Copyright © 2022 UIHUT all rights reserved.
                             </p>
                             <div class="social-media">
-                                <a href="#!">
+                                <a href="https://www.facebook.com/quang.ma.140193">
                                     <svg
                                         width="36"
                                         height="36"

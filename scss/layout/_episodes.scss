@@ -5,80 +5,69 @@
     margin-top: 160px;
     background-color: variables.$primary-color;
     scroll-margin-top: 70px;
-}
-
-.episodes__heading {
-    max-width: 400px;
-    position: relative;
-}
-
-.episodes__heading img {
-    position: absolute;
-    width: 35.64%;
-    left: 52.82%;
-    top: 40.38%;
-}
-
-.episodes-btn {
-    margin-left: auto;
-    height: 64px;
-    border-radius: 8px;
-    font-size: 1.8rem;
-    line-height: calc(6.4 / 1.8); /* 166.667% */
-}
-
-.episodes .container .row:nth-child(2) {
-    margin-top: 84px;
-}
-
-.episodes .container .row:nth-child(2) .row {
-    align-items: center;
-} 
-
-.episodes-item__img {
-    aspect-ratio: 270 / 286;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.episodes-item__img a {
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-}
-
-.episodes-item__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.episodes-item__duration {
-    color: #fd6f1f;
-    font-size: 1.4rem;
-    line-height: 1.71; /* 171.429% */
-}
-
-.episodes-item__heading {
-    color: #201830;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5; /* 150% */
-}
-
-.episodes-item__desc {
-    margin-top: 18px;
-}
-
-.episodes-item__link {
-    margin-top: 11px;
-    color: #936cdd;
-    font-size: 1.4rem;
-    font-weight: 600;
-    line-height: 1.71; /* 171.429% */
-}
-
-.episodes-item__link svg {
-    margin-left: 6px;
-    margin-bottom: -4px;
+    &__heading {
+        max-width: 400px;
+        position: relative;
+        img {
+            position: absolute;
+            width: 35.64%;
+            left: 52.82%;
+            top: 40.38%;
+        }
+    }
+    &-btn {
+        margin-left: auto;
+        height: 64px;
+        border-radius: 8px;
+        font-size: 1.8rem;
+        line-height: calc(6.4 / 1.8); /* 166.667% */
+    }
+    .container .row:nth-child(2) {
+        margin-top: 84px;
+        .row {
+            align-items: center;
+        } 
+    }
+    &-item__img {
+        aspect-ratio: 270 / 286;
+        border-radius: 8px;
+        overflow: hidden;
+        a {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &-item{
+        &__duration {
+            color: #fd6f1f;
+            font-size: 1.4rem;
+            line-height: 1.71; /* 171.429% */
+        }
+        &__heading {
+            margin-top: 6px;
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.5; /* 150% */
+        }
+        &__desc {
+            margin-top: 18px;
+        }
+        &__link {
+            margin-top: 11px;
+            color: #936cdd;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.71; /* 171.429% */
+            svg {
+                margin-left: 6px;
+                margin-bottom: -4px;
+            }
+        }
+    }
 }
