@@ -25,22 +25,26 @@
             align-items: center;
         } 
     }
-    &-item__img {
-        aspect-ratio: 270 / 286;
-        border-radius: 8px;
-        overflow: hidden;
-        a {
-            display: inline-block;
-            width: 100%;
-            height: 100%;
-        }
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
     &-item{
+        &:hover {
+            box-shadow: 0 0 5px 1px rgb(255, 228, 179);
+            border-radius: 8px;
+        }
+        &__img {
+            aspect-ratio: 270 / 286;
+            border-radius: 8px;
+            overflow: hidden;
+            a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
         &__duration {
             color: #fd6f1f;
             font-size: 1.4rem;
